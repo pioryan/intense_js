@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Registration Form</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="lib/jquery-ui.custom/jquery-ui.min.css" rel="stylesheet">
+    <link href="lib/signin.css" rel="stylesheet">
+</head>
+
+<body >
+
+
+<!--<div id="project-label">Select a project (type "j" for a start):</div>-->
+<!--<input id="project">-->
+<!--<input type="hidden" id="project-id">-->
+<!--<p id="project-description"></p>-->
+
+<div class="container">
+    <div class="row">
+        <form class="form-signin" id="register">
+
+            <div>
+                <input type="text" class="form-control" placeholder="Search USANA ID/NAME" id="associate">
+            </div>
+            </br>
+            </br>
+
+            <div class="row">
+                <div class="col-md">
+                    <!--USANA ID-->
+
+                    <div class="form-label-group">
+                        <input type="text" id="usana_id" class="form-control" placeholder="USANA ID"  >
+                        <label for="usana_id">USANA ID</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <!--FULL NAME-->
+                    <div class="form-label-group">
+                        <input type="text" id="full_name" class="form-control" placeholder="Full Name"  >
+                        <label for="full_name" >Full Name</label>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" id="associate-id">
+
+
+            <div class="row">
+                <div class="col-md">
+                    <!--First NAME-->
+                    <div class="form-label-group">
+                        <input type="text" id="first_name" class="form-control" placeholder="First Name"  >
+                        <label for="first_name" >First Name</label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <!--Last NAME-->
+                    <div class="form-label-group">
+                        <input type="text" id="last_name" class="form-control" placeholder="Last Name"  >
+                        <label for="last_name" >Last Name</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md">
+                    <!--Rank-->
+                    <div class="form-label-group">
+                        <input type="text" id="rank" class="form-control" placeholder="Rank"  >
+                        <label for="rank" >Rank</label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <!--Mentor-->
+                    <div class="form-label-group">
+                        <input type="text" id="mentor" class="form-control" placeholder="Mentor"  >
+                        <label for="mentor" >Mentor</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <!--Mobile Number-->
+                    <div class="form-label-group">
+                        <input type="text" id="mobile_number" class="form-control" placeholder="Mobile Number"  >
+                        <label for="mobile_number" >Mobile Number</label>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+
+        </form>
+    </div>
+    <div class="row form-signin">
+        <button class="btn btn-sm btn-warning btn-block" type="button" id="sync">Sync</button>
+    </div>
+
+    <div id="wait" style="display:none;width:100%;height:100%;position:fixed;top:50%;left:43%;"><img src='loader.gif' width="200" height="200" /><br>Loading..</div>
+</div>
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="associates.json"></script>
+<script src="lib/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/jquery-ui.custom/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
